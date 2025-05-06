@@ -1,0 +1,58 @@
+/* style.css - Basic styling for final pizza order project */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h1 {
+    color: #cc0000;
+  }
+  
+  label {
+    display: block;
+    margin: 8px 0 4px;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  textarea,
+  select {
+    width: 300px;
+    padding: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 6px;
+  }
+  
+  button {
+    background-color: #cc0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #a80000;
+  }
+  
+  #orderSummary {
+    margin-top: 20px;
+    background: #fff;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  hr {
+    margin: 20px 0;
+  }
+  

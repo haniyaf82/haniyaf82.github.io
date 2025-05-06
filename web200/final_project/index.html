@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Order App</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Order Your Pizza</h1>
+
+  <form id="orderForm">
+    <fieldset>
+      <legend>Customer Info</legend>
+      <label>Name: <input type="text" id="name" required></label><br>
+      <label>Address: <input type="text" id="address" required></label><br>
+      <label>Phone: <input type="tel" id="phone" required></label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Pizza Info</legend>
+      <label>Size:
+        <select id="size">
+          <option value="small">Small ($8)</option>
+          <option value="medium">Medium ($10)</option>
+          <option value="large">Large ($12)</option>
+        </select>
+      </label><br><br>
+
+      <label>Toppings (choose any):</label><br>
+      <label><input type="checkbox" value="Pepperoni">Pepperoni</label><br>
+      <label><input type="checkbox" value="Mushrooms">Mushrooms</label><br>
+      <label><input type="checkbox" value="Onions">Onions</label><br>
+      <label><input type="checkbox" value="Sausage">Sausage</label><br>
+      <label><input type="checkbox" value="Bacon">Bacon</label><br>
+      <label><input type="checkbox" value="Extra cheese">Extra cheese</label><br><br>
+
+      <button type="button" onclick="addPizza()">Add Pizza to Order</button>
+    </fieldset><br>
+
+    <label>Special Instructions:<br>
+      <textarea id="comments" rows="4" cols="40"></textarea>
+    </label><br><br>
+
+    <button type="button" onclick="submitOrder()">Submit Order</button>
+  </form>
+
+  <h2>Order Summary</h2>
+  <div id="orderSummary"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
